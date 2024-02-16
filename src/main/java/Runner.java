@@ -12,20 +12,25 @@ public class Runner {
         Car hondaJazz = new Car(1300, 150, "hatchback", combustionEngine);
         System.out.println(hondaJazz.getHorsePower());
 
+        
         IEngine electricEngine = new ElectricEngine(399, 100);
         hondaJazz.setEngine(electricEngine);
         System.out.println(hondaJazz.getHorsePower());
 
+        
         CargoShip ship = new CargoShip(20000,500,100,combustionEngine);
         System.out.println(ship.getHorsePower());
 
+        
         ship.setEngine(electricEngine);
         System.out.println(ship.getHorsePower());
 
+        
 
         Plane plane = new Plane(true,combustionEngine );
         System.out.println(plane.getHorsePower());
 
+        
         plane.setEngine(electricEngine);
         System.out.println(plane.getHorsePower());
         System.out.println(plane.getEngine());
